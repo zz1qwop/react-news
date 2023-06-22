@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import NewsItem from './NewsItem';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function NewsList() {
   const [data, setData] = useState();
@@ -15,16 +16,12 @@ export default function NewsList() {
   }, []);
 
   return (
-    <div>
-      NewsList
+    <div className="w-5/6 grid grid-cols-3 gap-4">
       {data &&
-        data.map((news) => (
-          <NewsItem
-            key={news.title}
-            title={news.title}
-            description={news.description}
-          />
-        ))}
+        data.map((news) => {
+          const id = uuidv4();
+          return <NewsItem key={id} id={id} news={news} />;
+        })}
     </div>
   );
 }
