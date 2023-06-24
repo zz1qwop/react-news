@@ -5,7 +5,7 @@ export default function NewsItem({ id, news }) {
   const navigate = useNavigate();
   const { title, description, publishedAt } = news;
   const handleNews = () => {
-    navigate(`news/${id}`, { state: news });
+    navigate(`/news/${id}`, { state: news });
   };
   return (
     <div
