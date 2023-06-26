@@ -2,11 +2,16 @@ import React, { useEffect, useState } from 'react';
 import NewsItem from './NewsItem';
 import { v4 as uuidv4 } from 'uuid';
 import { useParams } from 'react-router-dom';
+// import {
+//   categoryFakeData,
+//   defaultFakeData,
+//   searchFakeData,
+// } from '../api/fakeData';
 import {
-  categoryFakeData,
-  defaultFakeData,
-  searchFakeData,
-} from '../api/fakeData';
+  categoryRealData,
+  defaultRealData,
+  searchRealData,
+} from '../api/realData';
 
 export default function NewsList() {
   const [data, setData] = useState();
@@ -16,13 +21,13 @@ export default function NewsList() {
     const loadData = async () => {
       let response;
       if (search) {
-        response = await searchFakeData();
+        response = await searchRealData(search);
       } else {
-        response = await defaultFakeData();
+        response = await defaultRealData();
       }
 
       if (category) {
-        response = await categoryFakeData(category);
+        response = await categoryRealData(category);
       }
       setData(response.data.articles);
     };

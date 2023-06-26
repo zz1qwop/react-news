@@ -21,12 +21,6 @@ export default function Navbar() {
           entertainment
         </Link>
         <Link
-          to="/general"
-          className="hover:text-gray-600 hover:font-semibold hover:scale-y-110"
-        >
-          general
-        </Link>
-        <Link
           to="/health"
           className="hover:text-gray-600 hover:font-semibold hover:scale-y-110"
         >

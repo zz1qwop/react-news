@@ -17,9 +17,6 @@ export async function categoryFakeData(category) {
     case 'entertainment':
       response = await axios.get('/data/entertainment.json');
       break;
-    case 'general':
-      response = await axios.get('/data/general.json');
-      break;
     case 'health':
       response = await axios.get('/data/health.json');
       break;
