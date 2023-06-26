@@ -5,8 +5,8 @@ export default function NewsDetail() {
   const { state } = useLocation();
   const { title, description, publishedAt, author, url, urlToImage } = state;
   return (
-    <div className="px-4">
-      <h2 className="text-3xl font-semibold mb-4">{title}</h2>
+    <div className="mt-4 sm:mt-0 px-4">
+      <h2 className="text-2xl sm:text-3xl font-semibold mb-4">{title}</h2>
       <div className="flex justify-between mb-8">
         <p>{author}</p>
         <p>{publishedAt}</p>

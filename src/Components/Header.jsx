@@ -9,10 +9,12 @@ export default function Header() {
 
   const handleForm = (e) => {
     e.preventDefault();
+    if (search === '') return;
     navigate(`search/${search}`, { state: { search } });
+    setSearch('');
   };
   return (
-    <div className="flex w-full mt-8 mb-14">
+    <div className="w-5/6 flex sm:w-full mt-8 mb-8 sm:mb-14">
       <Link
         to="/"
         className="flex items-center text-4xl text-gray-700 mr-8 font-bold "

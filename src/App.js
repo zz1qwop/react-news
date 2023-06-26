@@ -7,9 +7,9 @@ import Navbar from './Components/Navbar';
 function App() {
   return (
     <div className="flex justify-center">
-      <div className="w-4/5">
+      <div className="flex flex-col items-center sm:w-4/5">
         <Header />
-        <div className="flex">
+        <div className="flex flex-col items-center sm:items-start sm:flex-row">
           <Navbar />
           <Outlet />
         </div>

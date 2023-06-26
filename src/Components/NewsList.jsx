@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import NewsItem from './NewsItem';
 import { v4 as uuidv4 } from 'uuid';
 import { useParams } from 'react-router-dom';
+import {
+  categoryFakeData,
+  defaultFakeData,
+  searchFakeData,
+} from '../api/fakeData';
 
 export default function NewsList() {
   const [data, setData] = useState();
@@ -12,37 +16,13 @@ export default function NewsList() {
     const loadData = async () => {
       let response;
       if (search) {
-        response = await axios.get('/data/search.json');
+        response = await searchFakeData();
       } else {
-        response = await axios.get('/data/all_category.json');
+        response = await defaultFakeData();
       }
 
       if (category) {
-        switch (category) {
-          case 'business':
-            response = await axios.get('/data/business.json');
-            break;
-          case 'entertainment':
-            response = await axios.get('/data/entertainment.json');
-            break;
-          case 'general':
-            response = await axios.get('/data/general.json');
-            break;
-          case 'health':
-            response = await axios.get('/data/health.json');
-            break;
-          case 'science':
-            response = await axios.get('/data/science.json');
-            break;
-          case 'sports':
-            response = await axios.get('/data/sports.json');
-            break;
-          case 'technology':
-            response = await axios.get('/data/technology.json');
-            break;
-          default:
-            break;
-        }
+        response = await categoryFakeData(category);
       }
       setData(response.data.articles);
     };
@@ -51,7 +31,7 @@ export default function NewsList() {
   }, [search, category]);
 
   return (
-    <div className="w-5/6 grid grid-cols-3 gap-4">
+    <div className="w-5/6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-4 sm:mt-0">
       {data &&
         data.map((news) => {
           const id = uuidv4();
