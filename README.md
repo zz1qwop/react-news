@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+## 뉴스 웹사이트
+[News API](https://newsapi.org/)를 이용한 웹페이지입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 기능
+#### 1. 전체 뉴스 보기
+![뉴스 전체보기](https://github.com/zz1qwop/react-news/assets/84325395/884922e2-22dc-43af-948b-0d2b7c401fe1)
 
-## Available Scripts
+#### 2. 특정 카테고리 뉴스 보기
+![뉴스 카테고리](https://github.com/zz1qwop/react-news/assets/84325395/524f9aa8-d835-49c8-b18c-0edfe6736cfc)
 
-In the project directory, you can run:
+#### 3. 키워드를 검색하여 해당하는 뉴스 보기
+![뉴스 검색하기](https://github.com/zz1qwop/react-news/assets/84325395/02c01d7a-6b77-40c6-810c-7d80c59d6346)
 
-### `yarn start`
+#### 4. 뉴스 상세 보기
+![뉴스 상세보기](https://github.com/zz1qwop/react-news/assets/84325395/02a28e15-0e20-4e20-bb45-dc459e9e26d8)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### 5. 반응형 CSS (모바일)
+![뉴스 모바일](https://github.com/zz1qwop/react-news/assets/84325395/46851f44-7703-4f87-9c55-c71ef39b4487)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+***
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+더 자세한 내용은 [블로그](https://velog.io/@zz1qwop/React-News-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)에서 볼 수 있습니다.
